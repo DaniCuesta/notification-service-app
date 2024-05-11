@@ -1,5 +1,7 @@
 replicaCount: 2
 
+fullname: notification-service  # Nombre completo para reutilizar en metadata
+
 image:
   repository: quay.io/danicuestam/notification-service
   pullPolicy: IfNotPresent
@@ -16,3 +18,7 @@ resources:
   requests:
     cpu: "100m"
     memory: "128Mi"
+
+labels:
+  app.kubernetes.io/name: notification-service
+  app.kubernetes.io/instance: "{{ .Release.Name }}"  # Esto se evaluará en tiempo de ejecución
