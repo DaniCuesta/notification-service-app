@@ -1,5 +1,5 @@
 # Utiliza una imagen base de OpenJDK
-FROM docker.io/openjdk:17-jdk-alpine3.12
+FROM docker.io/openjdk:17-jdk-alpine
 
 # Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
