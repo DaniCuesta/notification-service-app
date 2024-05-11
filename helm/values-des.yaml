@@ -20,5 +20,5 @@ resources:
     memory: "128Mi"
 
 labels:
-  app.kubernetes.io/name: notification-service
-  app.kubernetes.io/instance: "{{ .Release.Name }}"  # Esto se evaluará en tiempo de ejecución
+  app.kubernetes.io.name: notification-service
+  app.kubernetes.io.instance: "{{ .Release.Name }}"  # Esto se evaluará en tiempo de ejecución
