@@ -7,7 +7,7 @@ application:
 spring:
   kafka:
     consumer:
-      bootstrap-servers: 10.102.8.124:9092
+      bootstrap-servers: "kafka-service.kakfa.svc.cluster.local:9092"
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
