@@ -28,4 +28,7 @@ spec:
             - containerPort: {{ .Values.service.port }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+          env:
+          - name: KAFKA_SERVICE_HOST
+            value: "10.102.8.124"  # Replace with the actual IP
 

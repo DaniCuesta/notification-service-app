@@ -5,7 +5,7 @@ spring:
   application:
     name: notification-service
   kafka:
-    bootstrap-servers: ${kafka.examples.KafkaProperties.BOOTSTRAP_SERVERS}
+    bootstrap-servers: ${KAFKA_SERVICE_HOST}:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
