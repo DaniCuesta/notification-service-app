@@ -1,11 +1,13 @@
 server:
   port: 8084
 
+application:
+  name: notification-service
+  
 spring:
-  application:
-    name: notification-service
   kafka:
-    bootstrap-servers: ${KAFKA_SERVICE_HOST}:9092
+    consumer:
+      bootstrap-servers: 10.102.8.124:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
