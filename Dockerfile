@@ -1,5 +1,5 @@
 # Utiliza una imagen base de OpenJDK
-FROM registry.access.redhat.com/ubi9/openjdk-17:1.17-1
+FROM registry.access.redhat.com/ubi9/openjdk-17:1.18-4
 
 # Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
